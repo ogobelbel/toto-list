@@ -1,0 +1,19 @@
+<form [formGroup]="taskForm"
+      class="task-form"
+      (ngSubmit)="onFormSubmit()"
+>
+  <input type="text"
+         placeholder="Enter a task"
+         formControlName="taskName"
+         class="task-form-input"
+  >
+  <input type="text"
+         placeholder="Type a description"
+         formControlName="taskDescription"
+         class="task-form-input"
+  >
+  <button type="submit"
+          class="task-form-button"
+  >Create
+  </button>
+</form>

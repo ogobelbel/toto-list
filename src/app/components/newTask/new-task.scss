@@ -1,0 +1,18 @@
+.task-form {
+  margin-top: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+}
+
+.task-form-input{
+  padding: 0;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  height: 30px;
+}
+
+.task-form-button {
+  background-color: rgb(232, 232, 232);
+  height: 30px;
+}

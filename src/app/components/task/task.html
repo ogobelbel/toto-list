@@ -1,0 +1,13 @@
+<ng-content ></ng-content>
+<div class="task-wrapper">
+  <ng-content select="p"></ng-content>
+  <div class="task-name">Task: {{task.name}}</div>
+  <div class="task-text">Description: {{task.description}}</div>
+<div class="task-controls">
+  <input type="checkbox"
+         [checked]="task.isCompleted"
+         (change)="taskStatusEmit.emit(task.id)"
+  >
+  <button (click)="taskDeleteEmit.emit(task.id)">Delete</button>
+</div>
+</div>

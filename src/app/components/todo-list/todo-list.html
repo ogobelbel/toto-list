@@ -1,0 +1,9 @@
+<div class="main-wrapper">
+  <app-new-task (newTask)="todoListService.addTask($event)"></app-new-task>
+  <app-task *ngFor="let task of tasks; let i = index"
+            [task]="task"
+            (taskStatusEmit)="todoListService.changeTaskStatus($event)"
+            (taskDeleteEmit)="todoListService.deleteTask($event)">
+    <p>Task number {{i + 1}}</p>
+  </app-task>
+</div>
