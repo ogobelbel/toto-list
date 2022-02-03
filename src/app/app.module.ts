@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {TaskComponent} from "./components/task/task";
-import {NewTaskComponent} from "./components/newTask/new-task";
+import {NewTaskComponent} from "./components/new-task/new-task";
 import {ReactiveFormsModule} from '@angular/forms';
 import {TodoListComponent} from "./components/todo-list/todo-list";
 
